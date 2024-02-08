@@ -1,6 +1,8 @@
 # Assignment-2
+
+
 part1 :
-Input() function to input numbers from the user, separate even and odd numbers into two arrays, and then print them.<br>
+Input() function to input numbers from the user, separate even and odd numbers into two arrays, and then print them.
 
 
 part2 :
