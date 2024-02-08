@@ -1,0 +1,92 @@
+S.O.L.I.D Principle
+-----------------
+S : A class should have one ,and only one, reason to change 
+
+a)To initialize variable during creating an object we use contructors
+ 
+b)To initialize variable after cereting an object we use setter method
+-----------------------
+code:
+
+package getset;
+
+public class Data{
+
+int x,y,z;
+void setX(int z)
+{
+	this.x = 123;
+}
+
+-----------------------
+Visibility comparison :Private->Default->Protected->Public
+-----------------------
+A and B can get assigned to eachother when there ia a relationship exist
+
+public void getX(intx)
+return x; 
+/\
+ |
+getter method
+-----------------------
+inheritance : extends ,implements
+
+public class B extends A{
+// here A is a parent of B
+}
+
+
+A a = new B(); //up casting
+B b = (B) new A();//down casting when child refer to parent
+
+--------------------------
+finallly applicable only to methods
+ex :
+publi final static void m1()
+{
+
+}
+final means you cannot inherit this and cahnge this
+
+local var example
+
+final int x;
+x=90; no error
+x=12 error
+can be initialized only once when not declared
+---------------------------
+global class variable
+public class{
+int x;
+	public static void main(){
+}
+
+cannot be re-initialized whether it is declared or not;
+x =3; error
+----------------------------
+extends means extending the classs with a new class
+
+public class B extends A{ mean: B + A }
+
+----------------------------
+memeory will be reserved for private variable but will not be accessible from class B extends A where A have a final int x; and B has int y,z ; so creating an B type object will resserve memory for 3 variables but x will not be accesible without getter method {might setter}**dbt.
+----------------------------
+	
+contructors are never inherited
+we cannot call B class methods from parent class-A object	
+
+------------------------------------
+Both are different cases of class
+------------------------------------
+A a = new B(); parent gets converted into child
+((B) a).m2(); using downcasting interview Qn methods can be used after type casting
+-------------------------------------
+
+Method Overriding:
+
+
+
+	
+
+
+
